@@ -1,9 +1,19 @@
 # LLM Pretraining Code
 
-python data_prep.py
+A small end-to-end workflow demonstrating dataset preparation and fine-tuning a causal language model (GPT-2) using HuggingFace.
 
-python train.py
+## How to Run
 
-python inference.py
+1. Install dependencies:
+   pip install -r requirements.txt
 
-pip install -r requirements.txt
+2. Prepare dataset from `data.txt`:
+   python data_prep.py --data data.txt
+
+3. Train the model:
+   python train.py
+
+## Files
+- data_prep.py
+- train.py
+- requirements.txt
